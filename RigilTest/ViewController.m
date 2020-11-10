@@ -41,7 +41,7 @@
         cell = [[UITableViewCell alloc] init];
     }
     NSString *ch = [self.nameTextField.text substringWithRange: NSMakeRange(indexPath.row,1)];
-    [cell setText: ch];
+    cell.textLabel.text = ch;
     return cell;
 }
 
